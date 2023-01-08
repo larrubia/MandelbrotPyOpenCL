@@ -1,6 +1,3 @@
-# MandelbrotPyOpenCL
-Mandelbrot set code using GPU processing with PyOpenCL
-
 # Hardware INFO
 DEVICE INFO: Macbook PRO 16GB 2,6 GHz 6-Core Intel Core i7
 
@@ -25,4 +22,10 @@ fundamental problems in science and engineering with scientific and economic imp
 
 Nowadays, applications require the processing of large volumes of information each faster time. Parallel programming can reduce the time required to solve complex and larger problems, taking advantage of underutilized computational resources locally.
 
-# Tasks performed 
+# Tasks performed during the semester
+
+- Parallelization of matrices multiplication, using a shared memory programming model, using threads / tasks - JAVA
+- Parallelization of the generation of a Mandelbrot Fractal, using a shared memory programming model, based on a task pool - JAVA with ForkJoinPool and RecursiveAction
+- Vectorization algorithm to generate a Mandelbrot set using GPU processing - Python with PyOpenCL
+
+# Analysis
