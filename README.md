@@ -64,7 +64,7 @@ It's important to note that using threads will not failure in all contexts. I al
 
 However, all is not lost in trying to optimize fractal imaging. There's still the option of using parallel processing through the GPU (Graphic Unit Processing).
 
-For GPU parallel processing, Ii has been used PyOpenCL once the graphic unit was an AMD RADEON. For NVIDIA graphics devices it's possible to use PyCUDA.
+For GPU parallel processing, it has been used PyOpenCL once the graphic unit was an AMD RADEON. For NVIDIA graphics devices it's possible to use PyCUDA.
 
 "Andreas Klöckner of the Courant Institute of Mathematical Sciences has extended Python’s breadth of capabilities by releasing PyOpenCL." (SCARPINO, 2012, p.210)
 
