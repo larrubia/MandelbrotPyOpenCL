@@ -78,7 +78,7 @@ Everything considered, using the GPU offers an excellent architecture for parall
 
 # Future Research
 
-Analyze the use of threads, even if asynchronous in python and their failures is of paramount importance to understand more deeply what are their causes and what are the best ways to overcome restrictions.
+Analyze the use of threads, even if asynchronous in python and their failures is of paramount importance to understand more deeply what are their causes and what are the best ways to overcome restrictions in Python.
 
 # Bibliography
 
