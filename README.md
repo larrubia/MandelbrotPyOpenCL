@@ -11,6 +11,6 @@ macOS: Ventura
 # Why Parallel Programming?
 
 Traditionally, parallel programming had as its initial motivation the resolution and simulation of
-fundamental problems in science and engineering with scientific and economic importance, known as  GCPs.
+fundamental problems in science and engineering with scientific and economic importance, known as Grand Challenge Problems - GCPs.
 
-GCPs is the acronym for Grand Challenge Problems and its  
+Nowadays, applications require the processing of large volumes of information each faster time. Parallel programming can reduce the time required to solve complex and larger problems, taking advantage of underutilized computational resources locally.
