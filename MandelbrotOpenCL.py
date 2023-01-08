@@ -1,7 +1,7 @@
 '''
 Mandelbrot Set Algorithm using GPU Processing with PyOpenCL
 DEVICE INFO: Macbook PRO 16GB 2,6 GHz 6-Core Intel Core i7
-GRAPHICS: AMD Radeon Pro 5300M 4 GB
+GRAPHICS: AMD Radeon Pro 5300M 4GB
 macOS: Ventura
 @author Alessandra Larrubia
 '''
@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 from timeit import default_timer as timer
 
 width = 2048    #define a finite number of pixels on axis X
-height = 500   #define a finite number of pixels on axis Y
+height = 2048   #define a finite number of pixels on axis Y
 maxIt = 256    #define the maximun number of interactions allowed
 
 
@@ -61,7 +61,7 @@ def main():
     
     #Define open-cl queue and context
     platform = cl.get_platforms()[0] #Select the platform: Apple at 0x7fff0000
-    device = platform.get_devices()[2] #Select the device on the previous platform: AMD Radeon Pro 5300M Compute Engine on 'Apple' at 0x1021e00>
+    device = platform.get_devices()[1] #Select the device on the previous platform: AMD Radeon Pro 5300M Compute Engine on 'Apple' at 0x1021e00>
     context =cl.Context([device]) #Create the context with the devices informed previously
     queue = cl.CommandQueue(context) #Create the queue to be used for processing using the selected device set up
     

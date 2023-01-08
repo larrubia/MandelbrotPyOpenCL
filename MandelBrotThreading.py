@@ -29,6 +29,10 @@ numThr = 2 # number of threads to run
 
 class MandelbrotThread(threading.Thread):
     
+    print ()
+    print ('---------------------------------------------------------------------------------------------------------------------------------------------------------')
+    print ('ALGORITHM INFO')
+    print ()
     print('Generating fractal image of size {0} x {1} with {2} interactions using {3} threads'.format(xSize, ySize, maxIt, numThr)) 
 
     def __init__ (self, k):
@@ -74,4 +78,6 @@ if __name__ == "__main__":
 
     duration = timer() - start
     print(f'Total processing time: {duration:.2f} seconds')    
+    print ()
+    print ('---------------------------------------------------------------------------------------------------------------------------------------------------------')
     image.show()
