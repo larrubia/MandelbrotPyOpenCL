@@ -41,6 +41,8 @@ Fractals are infinitely repeating patterns on different scales. Self-similarity 
 
 The "Classic Sequential Mandelbrot Set Algorithm" was based on the sequential calculation of a recursive mathematical algorithm that generates a fractal image. Using this algorithm to generate a fractal image of size 2048 x 2048 with 256 interactions took 46.77 seconds.
 
+![image](https://user-images.githubusercontent.com/62728284/211222690-4a15d35f-941d-4dcd-8e09-e55a75895c83.png)
+
 In order to optimize the processing of the image generated through the classical sequential algorithm, a possible solution was sought in the use of threads for processing the calculation that originates the fractal image.
 
 For this, the use of the threading module was investigated.
@@ -51,4 +53,23 @@ Despite the existence of threading module, accordingly to McKinney, 2022, p.4 "P
 If Python doesn't allow algorithms to run in threads, how does it have a threading module?
 The answer to this question is not as simple as it seems, as it involves an analysis of the types of problems to be solved when using the threading module in Python.
 
-For the generation of the fractal figure, the use of the threading module did not even bring a higher performance in relation to the execution of the sequential code. This is probably because Python's implementation of threads doesn't run asynchronously. Adding threads multiplies the execution times in some cases. In "Classic Mandelbrot Set Algorithm using Threading in Python" the performance of the tasks didn´t improve the execution time oncethat only one thread can be executed at time , no matter how many processors the device have.
+For the generation of the fractal figure, the use of the threading module did not even bring a higher performance in relation to the execution of the sequential code. This is probably because Python's implementation of threads doesn't run asynchronously. Adding threads multiplies the execution times in some cases. In "Classic Mandelbrot Set Algorithm using Threading in Python" the performance of the tasks didn´t improve the execution time once that only one thread can be executed at time , no matter how many processors the device have. 
+
+Using the threading algorithm to generate a fractal image of size 2048 x 2048 with 256 interactions using 2 threads the total processing time wa 49.22 seconds. Although dividing the processing in tasks it made the processing time to increase 2.45 seconds when compared to the sequential programm.
+
+![image](https://user-images.githubusercontent.com/62728284/211222672-9277dba1-104d-4362-9985-f9114d752680.png)
+
+
+It's important to note that using threads will not failure in all contexts. I also have used the same technique to collect data from an open data excel file and had a very interesting result. Unfortunately, for the scenario worked here, the result did not go as expected.
+
+However, all is not lost in trying to optimize fractal imaging. We still have the option of using parallel processing through the GPU of the device used.
+
+For GPU parallel processing, I've used PyOpenCL once my graphic unit is an AMD RADEON. For NVIDIA graphics devices it's possible to use PyCUDA.
+
+"Andreas Klöckner of the Courant Institute of Mathematical Sciences has extended Python’s breadth of capabilities by releasing PyOpenCL. The classes and functions in this package make it possible to construct host applications with the same features as those coded in regular C." (SCARPINO, 2012, p.210)
+
+PyOpenCL lets you access GPUs and other massively parallel computing devices from Python. Using a GPU (Graphic Unit Processing) can have hundreds of cores and thus optimize the algorithm. The focus is on the kernel, with numpy typing and it's necessary that the host application written in Python requires some code written in C. 
+
+
+
+In short, using the GPU offers an excellent architecture for parallel operations that can be used to compute complex calculations.
