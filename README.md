@@ -66,7 +66,7 @@ However, all is not lost in trying to optimize fractal imaging. We still have th
 
 For GPU parallel processing, I've used PyOpenCL once my graphic unit is an AMD RADEON. For NVIDIA graphics devices it's possible to use PyCUDA.
 
-"Andreas Klöckner of the Courant Institute of Mathematical Sciences has extended Python’s breadth of capabilities by releasing PyOpenCL. The classes and functions in this package make it possible to construct host applications with the same features as those coded in regular C." (SCARPINO, 2012, p.210)
+"Andreas Klöckner of the Courant Institute of Mathematical Sciences has extended Python’s breadth of capabilities by releasing PyOpenCL." (SCARPINO, 2012, p.210)
 
 PyOpenCL lets you access GPUs and other massively parallel computing devices from Python. Using a GPU (Graphic Unit Processing) can have hundreds of cores and thus optimize the algorithm. The focus is on the kernel, with numpy typing and it's necessary that the host application written in Python requires some code written in C. 
 
