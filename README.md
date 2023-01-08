@@ -81,6 +81,7 @@ Everything considered, using the GPU offers an excellent architecture for parall
 Analyze the use of threads, even if asynchronous in python and their failures is of paramount importance to understand more deeply what are their causes and what are the best ways to overcome restrictions.
 
 # Bibliography
+
 - MCKINNEY, WES. Python for Data Analysis. 3rd edition. O'Reilly. California, 2022.
 - ORTEGA, José Manuel. Mastering: Python for Networking and Security. 2nd edition. Packt. Birmingham, 2020.
 - SCARPINO, Matthew. OpenCL in action: how to accelarate graphics and computation. Manning. New York, 2012.
