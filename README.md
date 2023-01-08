@@ -26,7 +26,7 @@ Nowadays, applications require the processing of large volumes of information ea
 
 - Parallelization of matrices multiplication, using a shared memory programming model, using threads / tasks - JAVA
 - Parallelization of the generation of a Mandelbrot Fractal, using a shared memory programming model, based on a task pool - JAVA with ForkJoinPool and RecursiveAction
-- Vectorization algorithm to generate a Mandelbrot set using GPU processing - Python with PyOpenCL
+- Vectorization algorithm to generate a Mandelbrot Fractal using GPU processing - Python with PyOpenCL
 
 # Critical Analysis
 
