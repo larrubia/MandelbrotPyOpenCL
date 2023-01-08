@@ -35,13 +35,20 @@ Nowadays, applications require the processing of large volumes of information ea
 - Mandelbrot Set Algorithm using GPU Processing with PyOpenCL in Python
 
 # Critical Analysis
-For reasons of great professional interest in the area of data science, this analysis will focus only on algorithms that used the Python language.
+Taking into account professional interest in data science area, this analysis will focus only on algorithms that used the Python language.
 
 Fractals are infinitely repeating patterns on different scales. Self-similarity can often be defined mathematically with recursion
 
-The Classic Sequential Mandelbrot Set Algorithm was based on the sequential calculation of a recursive mathematical algorithm that generates a fractal image. Using this algorithm to generate a fractal image of size 2048 x 2048 with 256 interactions took 46.77 seconds.
+The "Classic Sequential Mandelbrot Set Algorithm" was based on the sequential calculation of a recursive mathematical algorithm that generates a fractal image. Using this algorithm to generate a fractal image of size 2048 x 2048 with 256 interactions took 46.77 seconds.
 
 In order to optimize the processing of the image generated through the classical sequential algorithm, a possible solution was sought in the use of threads for processing the calculation that originates the fractal image.
 
+For this, the use of the threading module was investigated.
+"The threading module contains a Thread class that we need to extend to create our own execution threads. The run method will contain the code we want to execute on the thread." (ORTEGA, 2020 - p.59)
 
+Despite the existence of threading module, accordingly to McKinney, 2022, p.4 "Python can be a challenging language for building highly concurrent, multithreaded applications, particularly with many threads. The reason for this is that it has what is known as the Global Interpreter Lock (GIL), a mechanism that prevents the interpreter from executing more than one Python instruction at a time."
 
+If Python doesn't allow algorithms to run in threads, how does it have a threading module?
+The answer to this question is not as simple as it seems, as it involves an analysis of the types of problems to be solved when using the threading module in Python.
+
+For the generation of the fractal figure, the use of the threading module did not even bring a higher performance in relation to the execution of the sequential code. This is probably because Python's implementation of threads doesn't run asynchronously. Adding threads multiplies the execution times in some cases. In "Classic Mandelbrot Set Algorithm using Threading in Python" the performance of the tasks didn´t improve the execution time oncethat only one thread can be executed at time , no matter how many processors the device have.
