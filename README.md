@@ -28,5 +28,10 @@ Nowadays, applications require the processing of large volumes of information ea
 - Parallelization of the generation of a Mandelbrot Fractal, using a shared memory programming model, based on a task pool - JAVA with ForkJoinPool and RecursiveAction
 - Vectorization algorithm to generate a Mandelbrot Fractal using GPU processing - Python with PyOpenCL
 
-# Critical Analysis
+# Provided Algorithms
 
+- Classic Sequential Mandelbrot Set Algorithm
+- Classic Mandelbrot Set Algorithm using Threads
+- Mandelbrot Set Algorithm using GPU Processing with PyOpenCL
+
+# Critical Analysis
