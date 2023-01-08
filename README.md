@@ -39,4 +39,9 @@ For reasons of great professional interest in the area of data science, this ana
 
 Fractals are infinitely repeating patterns on different scales. Self-similarity can often be defined mathematically with recursion
 
-The Classic Sequential Mandelbrot Set Algorithm was based on the sequential calculation of a recursive mathematical algorithm that generates a fractal image.
+The Classic Sequential Mandelbrot Set Algorithm was based on the sequential calculation of a recursive mathematical algorithm that generates a fractal image. Using this algorithm to generate a fractal image of size 2048 x 2048 with 256 interactions took 46.77 seconds.
+
+In order to optimize the processing of the image generated through the classical sequential algorithm, a possible solution was sought in the use of threads for processing the calculation that originates the fractal image.
+
+
+
