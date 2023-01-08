@@ -1,5 +1,5 @@
 '''
-Mandelbrot set code using GPU processing with PyOpenCL
+Mandelbrot Set Algorithm using GPU Processing with PyOpenCL
 DEVICE INFO: Macbook PRO 16GB 2,6 GHz 6-Core Intel Core i7
 GRAPHICS: AMD Radeon Pro 5300M 4 GB
 macOS: Ventura

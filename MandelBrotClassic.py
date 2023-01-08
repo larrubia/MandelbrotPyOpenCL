@@ -1,5 +1,5 @@
 '''
-Classic Mandelbrot Set Code 
+Classic Sequential Mandelbrot Set Algorithm
 DEVICE INFO: Macbook PRO 16GB 2,6 GHz 6-Core Intel Core i7
 macOS: Ventura
 @author Alessandra Larrubia
