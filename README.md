@@ -34,7 +34,7 @@ Nowadays, applications require the processing of large volumes of information ea
 - Classic Mandelbrot Set Algorithm using Threading in Python
 - Mandelbrot Set Algorithm using GPU Processing with PyOpenCL in Python
 
-# Critical Analysis
+# Analysis
 Taking into account professional interest in data science area, this analysis will focus only on algorithms that used the Python language.
 
 Fractals are infinitely repeating patterns on different scales. Self-similarity can often be defined mathematically with recursion
