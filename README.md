@@ -82,6 +82,6 @@ Analyze the use of threads, even if asynchronous in python and their failures is
 
 # Bibliography
 
-- MCKINNEY, WES. Python for Data Analysis. 3rd edition. O'Reilly. California, 2022.
-- ORTEGA, José Manuel. Mastering: Python for Networking and Security. 2nd edition. Packt. Birmingham, 2020.
-- SCARPINO, Matthew. OpenCL in action: how to accelarate graphics and computation. Manning. New York, 2012.
+- MCKINNEY, WES. Python for Data Analysis. 3rd edition. California: O'Reilly, 2022.
+- ORTEGA, José Manuel. Mastering: Python for Networking and Security. 2nd edition. Birmingham: Packt, 2020.
+- SCARPINO, Matthew. OpenCL in action: how to accelarate graphics and computation.  New York: Manning, 2012.
