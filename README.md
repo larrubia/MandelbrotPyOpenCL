@@ -31,7 +31,6 @@ Nowadays, applications require the processing of large volumes of information ea
 # Provided Algorithms
 
 - Classic Sequential Mandelbrot Set Algorithm in Python
-- Classic Mandelbrot Set Algorithm using Threading in Python
 - Mandelbrot Set Algorithm using GPU Processing with PyOpenCL in Python
 
 # Analysis
